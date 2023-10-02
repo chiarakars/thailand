@@ -52,6 +52,7 @@ p {
 table {
   color: black;
   text-align: center;
+  background-color: rgb(166, 175, 188);
 }
 
 footer {
@@ -70,8 +71,20 @@ a:hover {
   /* transform: translateY(-0.5em) */
 }
 
+/*PLAATJES*/ 
+
 .img-scooter {
   margin-left: 2em;
+}
+
+.img-duiken, .img-fullmoon, .img-giel {
+    float: left;
+    margin: 1%;
+}
+
+.img-tuben, .img-feye {
+    float: right;
+    margin: 1%;
 }
 
 .duiken,
@@ -86,6 +99,7 @@ a:hover {
   border: 2px solid whitesmoke;
   border-radius: 50px;
   margin: 2em;
+  justify-content: first baseline;
 }
 
 .ik {
