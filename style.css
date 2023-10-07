@@ -1,7 +1,3 @@
-.overmij {
-  text-align: right;
-}
-
 body {
   background-color: rgb(212, 220, 224);
   color: black;
@@ -12,7 +8,6 @@ h1,
 h2,
 body,
 p,
-table,
 footer {
   font-family: Helvetica, Arial, sans-serif; 
 }
@@ -37,6 +32,7 @@ ol {
   list-style-type: none;
   gap: 1em;
   justify-content: space-around;
+  text-align: justify;
 }
 
 ul {
@@ -47,6 +43,29 @@ ul {
   justify-content: center;
   list-style-type: none;
   gap: 1em;
+}
+
+a {
+  background: whitesmoke;
+  color: black;
+  border-radius: 1em;
+  padding: 0.6em;
+  margin-bottom: 2em;
+  border-radius: 0.2em;
+  text-decoration: none;
+  /* transition: background 250ms ease;  */
+}
+
+a:hover {
+  /* border: 2px solid rgb(222, 233, 235); */
+  color: white;
+  background: lightblue;
+  /* transform: translateY(-0.5em) */
+}
+
+.a-route {
+  padding: 1em;
+  font-size: 1.2em;
 }
 
 #bestemming-header h3 {
@@ -78,7 +97,7 @@ section.bestemmingen article p {
 }
 
 p {
-  text-align: center;
+  /* text-align: center; */
   /* padding-left: 10em;
   padding-right: 10em; */
 }
@@ -92,31 +111,39 @@ footer a {
   text-decoration: none;
 }
 
-a {
-  transition: background 250ms ease; 
-}
-
-a:hover {
-  border: 2px solid rgb(222, 233, 235);
-  color: white;
-  background: lightblue;
-  /* transform: translateY(-0.5em) */
+.text-mijnreis {
+  padding-left: 10em;
+  padding-right: 10em;
 }
 
 .intro {
   text-align: right;
 }
 
-.a-top5 {
-  background-color: antiquewhite;
-  border-radius: 2em;
-  padding: 0.5em;
-  border-radius: 0.2em;
-  text-decoration: none;
-  transition: background 250ms ease; 
+.img-snorkelen {
+  float: left;
+  padding-left: 10%;
+  margin: 2em;
 }
 
-/*PLAATJES*/
+.overmij {
+  text-align: justify;
+  padding-top: 5%;
+  padding-left: 50%;
+  padding-bottom: 10%;
+  padding-right: 20%;
+}
+
+.img-wereld {
+  padding: 2em;
+  /* width: 100%;
+  height: auto; */
+}
+
+.titel-tuben,
+.titel-scooter {
+  text-align: right;
+}
 
 .img-scooter,
 .img-duiken,
@@ -146,7 +173,12 @@ a:hover {
   margin: 2em;
 }
 
-.img-snorkelen {
-  padding: 20px;
-  margin: 2em;
+.img-vliegtuig-left {
+  float: left; 
+  padding: 5%;
+}
+
+.img-vliegtuig-right {
+  float: right; 
+  padding: 5%;
 }
