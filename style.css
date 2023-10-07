@@ -1,3 +1,7 @@
+.overmij {
+  text-align: right;
+}
+
 body {
   background-color: rgb(212, 220, 224);
   color: black;
@@ -10,7 +14,7 @@ body,
 p,
 table,
 footer {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Helvetica, Arial, sans-serif; 
 }
 
 h1 {
@@ -40,19 +44,43 @@ ul {
   padding: 1em;
   background-color: whitesmoke;
   display: flex;
+  justify-content: center;
   list-style-type: none;
   gap: 1em;
-  justify-content: space-around;
+}
+
+#bestemming-header h3 {
+  font-weight: 800;
+}
+
+section.bestemmingen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section.bestemmingen article {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(150px, 1fr));
+}
+
+section.bestemmingen article h3 {
+  font-size: 1em;
+  font-weight: 400;
+  justify-self: left;
+}
+section.bestemmingen article p {
+  justify-self: left;
+}
+
+#bestemming-header p {
+  font-weight: 800;
 }
 
 p {
   text-align: center;
-}
-
-table {
-  color: black;
-  text-align: center;
-  background-color: rgb(166, 175, 188);
+  /* padding-left: 10em;
+  padding-right: 10em; */
 }
 
 footer {
@@ -64,6 +92,10 @@ footer a {
   text-decoration: none;
 }
 
+a {
+  transition: background 250ms ease; 
+}
+
 a:hover {
   border: 2px solid rgb(222, 233, 235);
   color: white;
@@ -71,20 +103,34 @@ a:hover {
   /* transform: translateY(-0.5em) */
 }
 
-/*PLAATJES*/ 
-
-.img-scooter {
-  margin-left: 2em;
+.intro {
+  text-align: right;
 }
 
-.img-duiken, .img-fullmoon, .img-giel {
-    float: left;
-    margin: 1%;
+.a-top5 {
+  background-color: antiquewhite;
+  border-radius: 2em;
+  padding: 0.5em;
+  border-radius: 0.2em;
+  text-decoration: none;
+  transition: background 250ms ease; 
 }
 
-.img-tuben, .img-feye {
-    float: right;
-    margin: 1%;
+/*PLAATJES*/
+
+.img-scooter,
+.img-duiken,
+.img-fullmoon,
+.img-giel {
+  float: left;
+  margin: 1%;
+  text-align:left;
+}
+
+.img-tuben,
+.img-feye {
+  float: right;
+  margin: 1%;
 }
 
 .duiken,
@@ -93,22 +139,14 @@ a:hover {
 .feye,
 .giel {
   background-color: rgb(212, 220, 224);
-  padding: 20px;
+  padding: 40px;
   background: whitesmoke;
-  text-align: center;
-  border: 2px solid whitesmoke;
+  /* text-align: center; */
   border-radius: 50px;
   margin: 2em;
-  justify-content: first baseline;
 }
 
-.ik {
-  /* text-align: left; */
-}
-
-.ik-img {
-  /*  background-color: rgb(212, 220, 224);
-    padding: 20px;
-    text-align: center;
-    margin: 2em; */
+.img-snorkelen {
+  padding: 20px;
+  margin: 2em;
 }
