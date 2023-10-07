@@ -6,33 +6,24 @@ body {
 
 h1,
 h2,
+h3,
 body,
 p,
 footer {
-  font-family: Helvetica, Arial, sans-serif; 
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 150;
 }
 
 h1 {
   color: white;
-  text-align: center;
   background-color: rgb(141, 180, 195);
-  margin-bottom: 20px;
   padding: 1em;
-  font-size: 40px;
+  font-size: 2.8vw;
+  font-weight: 400;
 }
 
-nav a {
-  text-decoration: none;
-  color: black;
-}
-
-ol {
-  color: black;
-  padding: 1em;
-  list-style-type: none;
-  gap: 1em;
-  justify-content: space-around;
-  text-align: justify;
+h3 {
+  font-weight: 400;
 }
 
 ul {
@@ -45,6 +36,15 @@ ul {
   gap: 1em;
 }
 
+ol {
+  color: black;
+  padding: 1em;
+  list-style-type: none;
+  gap: 1em;
+  justify-content: space-around;
+  text-align: justify;
+}
+
 a {
   background: whitesmoke;
   color: black;
@@ -53,23 +53,34 @@ a {
   margin-bottom: 2em;
   border-radius: 0.2em;
   text-decoration: none;
-  /* transition: background 250ms ease;  */
+  transition: 250ms ease;
 }
 
 a:hover {
-  /* border: 2px solid rgb(222, 233, 235); */
   color: white;
   background: lightblue;
-  /* transform: translateY(-0.5em) */
 }
 
 .a-route {
   padding: 1em;
-  font-size: 1.2em;
+  font-size: 1.2vw;
+  font-weight: 500;
+}
+
+footer {
+  margin-bottom: -5em;
+}
+
+footer a:hover {
+  background: whitesmoke;
 }
 
 #bestemming-header h3 {
-  font-weight: 800;
+  font-weight: 500;
+}
+
+#bestemming-header p {
+  font-weight: 500;
 }
 
 section.bestemmingen {
@@ -85,45 +96,12 @@ section.bestemmingen article {
 
 section.bestemmingen article h3 {
   font-size: 1em;
-  font-weight: 400;
+  font-weight: 200;
   justify-self: left;
 }
+
 section.bestemmingen article p {
   justify-self: left;
-}
-
-#bestemming-header p {
-  font-weight: 800;
-}
-
-p {
-  /* text-align: center; */
-  /* padding-left: 10em;
-  padding-right: 10em; */
-}
-
-footer {
-  margin-bottom: -5em;
-}
-
-footer a {
-  color: black;
-  text-decoration: none;
-}
-
-.text-mijnreis {
-  padding-left: 10em;
-  padding-right: 10em;
-}
-
-.intro {
-  text-align: right;
-}
-
-.img-snorkelen {
-  float: left;
-  padding-left: 10%;
-  margin: 2em;
 }
 
 .overmij {
@@ -134,30 +112,25 @@ footer a {
   padding-right: 20%;
 }
 
+.text-mijnreis {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
 .img-wereld {
-  padding: 2em;
-  /* width: 100%;
-  height: auto; */
+  padding: 5%;
 }
 
-.titel-tuben,
-.titel-scooter {
-  text-align: right;
-}
-
-.img-scooter,
-.img-duiken,
-.img-fullmoon,
-.img-giel {
+.img-vliegtuig-left {
   float: left;
-  margin: 1%;
-  text-align:left;
+  padding: 5%;
+  padding-top: 10%;
 }
 
-.img-tuben,
-.img-feye {
+.img-vliegtuig-right {
   float: right;
-  margin: 1%;
+  padding: 5%;
+  padding-top: 10%;
 }
 
 .duiken,
@@ -168,17 +141,30 @@ footer a {
   background-color: rgb(212, 220, 224);
   padding: 40px;
   background: whitesmoke;
-  /* text-align: center; */
   border-radius: 50px;
-  margin: 2em;
+  margin: 3%;
 }
 
-.img-vliegtuig-left {
-  float: left; 
-  padding: 5%;
+.img-duiken,
+.img-fullmoon,
+.img-giel {
+  float: left;
+  margin: 1%;
 }
 
-.img-vliegtuig-right {
-  float: right; 
-  padding: 5%;
+.img-tuben,
+.img-feye {
+  float: right;
+  margin: 1%;
+}
+
+.titel-tuben,
+.titel-feye {
+  text-align: right;
+}
+
+.img-snorkelen {
+  float: left;
+  padding-left: 10%;
+  margin: 3%;
 }
