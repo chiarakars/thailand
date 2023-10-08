@@ -104,17 +104,25 @@ section.bestemmingen article p {
   justify-self: left;
 }
 
-.overmij {
-  text-align: justify;
-  padding-top: 5%;
-  padding-left: 50%;
-  padding-bottom: 10%;
-  padding-right: 20%;
-}
-
 .text-mijnreis {
   padding-left: 10%;
   padding-right: 10%;
+}
+
+.flexbox-overmij {
+  display: flex;
+  flex-direction: row;
+}
+
+.img-snorkelen {
+  padding-left: 13%;
+  padding-right: 5%;
+  padding-bottom: 5%;
+}
+
+.text-overmij {
+  padding-right: 10%;
+  text-align: justify;
 }
 
 .img-wereld {
@@ -139,6 +147,8 @@ section.bestemmingen article p {
 .feye,
 .giel {
   background-color: rgb(212, 220, 224);
+  display: flex;
+  justify-content: space-between;
   padding: 40px;
   background: whitesmoke;
   border-radius: 50px;
@@ -147,24 +157,13 @@ section.bestemmingen article p {
 
 .img-duiken,
 .img-fullmoon,
-.img-giel {
-  float: left;
-  margin: 1%;
-}
-
+.img-giel,
 .img-tuben,
 .img-feye {
-  float: right;
   margin: 1%;
 }
 
-.titel-tuben,
-.titel-feye {
+.text-tuben > h3,
+.text-feye > h3 {
   text-align: right;
-}
-
-.img-snorkelen {
-  float: left;
-  padding-left: 10%;
-  margin: 3%;
 }
